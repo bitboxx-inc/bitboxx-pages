@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>特定商取引法に基づく表記 | bitboxx Pages</title>
+</svelte:head>
+
 <div>
 
 	<div class="m-4">
