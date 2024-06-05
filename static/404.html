@@ -8,7 +8,7 @@
         // GitHub Pagesの404ページのリダイレクト処理
         document.addEventListener("DOMContentLoaded", function() {
             var path = window.location.pathname;
-            var redirectTo = "/" + window.location.pathname + window.location.search + window.location.hash;
+            var redirectTo = path + window.location.search + window.location.hash;
             window.location.replace(redirectTo);
         });
     </script>
