@@ -1,101 +1,65 @@
-<div>
+<script>
+	const items = [
+		{ label: '販売事業者', value: '株式会社bitboxx' },
+		{ label: '運営統括責任者', value: '影島翔' },
+		{ label: '所在地', value: '東京都中央区日本橋箱崎町16番11 ルミネ日本橋601' },
+		{ label: 'メールアドレス', value: 'contact@bitboxx.co.jp' },
+		{ label: '販売URL', value: 'https://pages.bitboxx.co.jp', href: 'https://pages.bitboxx.co.jp' },
+		{ label: 'お支払い方法', value: 'クレジットカード、振込' },
+		{ label: '販売価格', value: '各サービスページまたはお見積もり時に表示する金額によります。' },
+		{
+			label: '商品代金以外の必要料金',
+			value: 'インターネット接続料金、通信料金、独自ドメイン取得費用等はお客様のご負担となります。'
+		},
+		{
+			label: '役務の提供時期',
+			value: 'ご契約および必要情報の受領後、個別に合意したスケジュールに従って提供します。'
+		},
+		{
+			label: '引渡し方法',
+			value: 'ウェブサイトの公開、管理画面の提供、または電子メールによりご案内します。'
+		},
+		{
+			label: '返品・キャンセル',
+			value:
+				'サービスの性質上、着手後の返品・返金には応じられません。契約成立前のキャンセルについては個別に対応します。'
+		},
+		{
+			label: '中途解約',
+			value:
+				'月額契約の解約は、次回更新日前までに当社所定の方法でご連絡ください。既に発生した料金の日割返金は行いません。'
+		}
+	];
+</script>
 
-	<div class="m-4">
-		<a href="/">戻る</a>
-	</div>
+<svelte:head>
+	<title>特定商取引法に基づく表記 | bitboxx Pages</title>
+</svelte:head>
 
-	<h3>【特定商取引法に基づく表記】</h3>
-	<table
-			bgcolor="#999999"
-			border="0"
-			cellpadding="9"
-			cellspacing="1"
-			style="font-size:13px;text-align:left"
-	>
-		<tr>
-			<th bgcolor="#EEEEEE">販売社名</th>
-			<td bgcolor="#FFFFFF">株式会社bitboxx</td>
-		</tr>
-		<tr>
-			<th bgcolor="#EEEEEE">運営統括責任者</th>
-			<td bgcolor="#FFFFFF">影島翔</td>
-		</tr>
-		<tr>
-			<th bgcolor="#EEEEEE">所在地</th>
-			<td bgcolor="#FFFFFF">東京都中央区日本橋箱崎町１６番１１ルミネ日本橋６０１</td>
-		</tr>
-		<tr>
-			<th bgcolor="#EEEEEE">電話番号</th>
-			<td bgcolor="#FFFFFF">05031023355</td>
-		</tr>
-		<tr>
-			<th bgcolor="#EEEEEE">メールアドレス</th>
-			<td bgcolor="#FFFFFF">
-				contact.pages＠bitboxx.co.jp<br /><br />
-				・上記アドレスは、迷惑メール対策のため、全角の「＠」で表記しております。<br />
-				お問合わせの際は「＠」を半角の「@」に変更してご利用ください。
-			</td>
-		</tr>
-		<tr>
-			<th bgcolor="#EEEEEE">販売URL</th>
-			<td bgcolor="#FFFFFF">
-				<a href="https://pages.bitboxx.co.jp" target="_blank">https://pages.bitboxx.co.jp</a>
-			</td>
-		</tr>
-		<tr>
-			<th bgcolor="#EEEEEE">お支払い方法</th>
-			<td bgcolor="#FFFFFF">
-				クレジットカード決済のみ (入会日を起算として1ヶ月毎に課金)
-			</td>
-		</tr>
-		<tr>
-			<th bgcolor="#EEEEEE">販売価格</th>
-			<td bgcolor="#FFFFFF">月々10,000円 (税込)</td>
-		</tr>
-		<tr>
-			<th bgcolor="#EEEEEE">商品代金以外の必要金額</th>
-			<td bgcolor="#FFFFFF">0円（独自ドメインを取得される場合は取得費用が発生いたします。）</td>
-		</tr>
-		<tr>
-			<th bgcolor="#EEEEEE">販売数量</th>
-			<td bgcolor="#FFFFFF">1（1~2ページあたり）</td>
-		</tr>
-		<tr>
-			<th bgcolor="#EEEEEE">お申込み有効期限</th>
-			<td bgcolor="#FFFFFF">
-				14日以内にお願いいたします。<br />
-				14日間入金がない場合は、キャンセルとさせていただきます。
-			</td>
-		</tr>
-		<tr>
-			<th bgcolor="#EEEEEE">商品引渡し時期</th>
-			<td bgcolor="#FFFFFF">
-				お客様とご相談させていただき、確定のご了承を頂いたのち1週間程度を目安にローンチいたします。尚、ホームページの所有権含むソースコード、管理、保守業務は弊社で行います。
-			</td>
-		</tr>
-		<tr>
-			<th bgcolor="#EEEEEE">商品引渡し方法</th>
-			<td bgcolor="#FFFFFF">
-				ローンチ完了後、お客様にメールで通知いたします。
-			</td>
-		</tr>
-		<tr>
-			<th bgcolor="#EEEEEE">返品・不良品について</th>
-			<td bgcolor="#FFFFFF">
-				情報という特性上、お客様のご都合による返品および返金には応じられません。<br />
-				ただし、商品引渡し前に発生した月額費用は返金いたします。<br />
-				なお、ドメイン取得費用などの月額費用以外の費用は返金対象外となります。
-			</td>
-		</tr>
-		<tr>
-			<th bgcolor="#EEEEEE">表現、及び商品に関する注意書き</th>
-			<td bgcolor="#FFFFFF">
-				本商品に示された表現や再現性には個人差があり、必ずしも利益や効果を保証したものではございません。
-			</td>
-		</tr>
-	</table>
+<div class="bg-light_yellow min-h-screen py-10">
+	<div class="mx-auto w-[calc(100%-2rem)] max-w-[960px] rounded-2xl bg-white px-6 py-8 md:px-10">
+		<div class="mb-6">
+			<a href="/" class="font-noto underline">戻る</a>
+		</div>
 
-	<div class="m-4">
-		<a href="/">戻る</a>
+		<h1 class="font-noto text-3xl font-bold">特定商取引法に基づく表記</h1>
+
+		<div class="mt-8 overflow-hidden rounded-xl border border-black/10">
+			{#each items as item, index}
+				<div
+					class={`grid md:grid-cols-[240px_1fr] ${index < items.length - 1 ? 'border-b border-black/10' : ''}`}
+				>
+					<div class="bg-gray px-5 py-4 font-noto font-bold">{item.label}</div>
+					<div class="px-5 py-4 font-noto leading-7">
+						{#if item.href}
+							<a class="underline" href={item.href} target="_blank" rel="noreferrer">{item.value}</a
+							>
+						{:else}
+							{item.value}
+						{/if}
+					</div>
+				</div>
+			{/each}
+		</div>
 	</div>
 </div>
